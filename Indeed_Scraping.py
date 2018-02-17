@@ -119,8 +119,8 @@ for url in url_set:
         #add job_post to data frame
         sample_df.loc[num] = job_post
         
-# #saving sample_df as a local csv file — define your own local path to save contents 
-# sample_df.to_csv('Indeed_Scrape.csv', encoding="utf-8")
+#saving sample_df as a local csv file — define your own local path to save contents 
+sample_df.to_csv('Indeed_Scrape.csv', encoding="utf-8")
 
 #reading csv with index_col = 0, otherwise I get an additional
 #unnamed column of separate index values
