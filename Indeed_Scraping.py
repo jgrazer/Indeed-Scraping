@@ -6,7 +6,6 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import time
 
-#just making a change
 # #Cities
 # max_results_per_city = 100 # pages of results per city
 # city_set = ["Boston%2C+ma","Concord%2C+nh","Portsmouth%2C+nh","Nashua%2C+nh","Manchester%2C+nh","Worcester%2C+ma"]#,"Portland%2C+or","Seattle%2C+wa","Denver%2C+co","Hartford%2C+ct","New+Haven%2C+ct","Providence%2C+ri","Portland%2C+me"]
