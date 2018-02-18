@@ -144,7 +144,8 @@ scrape_data = scrape_data[~scrape_data.job_title.str.contains('|'.join(search_jo
 
 #removing jobs that I applied to
 applied_already = ['Energy Efficiency Associate.Energy Solutions.Boston, MA 02108 ','Test Engineer.DTCC.Boston, MA','Associate Product Development Engineer.The Getinge Group.Merrimack, NH','Engineer I.Ambri.Marlborough, MA 01752',
-'Mechanical Design Engineer.Formulatrix, Inc..Bedford, MA','Assistant Automation Shift Engineer - Night Shifts.Bristol-Myers Squibb.Devens, MA 01434']
+'Mechanical Design Engineer.Formulatrix, Inc..Bedford, MA','Assistant Automation Shift Engineer - Night Shifts.Bristol-Myers Squibb.Devens, MA 01434','Mechanical Engineer - well funded start-up.InnoTech Staffing.Watertown, MA 02472',
+'Engineer I.Mott MacDonald.Westwood, MA','Mechanical Engineer.Businesses UTC Climate, Controls & Security.Ashland, MA']
 scrape_data = scrape_data[~scrape_data.job_comp_loc.str.contains('|'.join(applied_already), case = False)]
 
 #removing jobs on my blacklist (unqualified, terrible, etc.) **C
@@ -153,7 +154,9 @@ blacklist = ['Engineering Specialist II - Canton, MA.Siemens AG.Canton, MA',' Re
 'Applications Engineer.Summit Technical Solutions, LLC.Worcester, MA','Applications Engineer - Power Electronics.Michael Page US.Lowell, MA','System Operations Engineer.SilverRail Technologies, Inc..Woburn, MA',
 'Systems Engineer.Alexander Technology Group.Boston, MA','Systems Engineer.Harris Corporation.Nashua, NH 03062','Systems Engineer.Businesses UTC Aerospace Systems.Westford, MA','Systems Engineer.Robert Half Technology.Manchester, NH 03102',
 'Systems Engineer I.Raytheon.Andover, MA','Systems Engineer I.Instrumentation Laboratory.Bedford, MA 01730','Systems Engineer – Wireless Technology - Boston.Newton Colmore Consulting Ltd.Boston, MA',
-'Systems Integration and Test Engineer / RF Microwave / LabVIEW / Chelmsford, MA.Lockheed Martin.Chelmsford, MA 01824','Test Engineer .Oasis Systems, Inc..Hanscom AFB, MA','DESIGN ENGINEER.CIRCOR.Warren, MA']
+'Systems Integration and Test Engineer / RF Microwave / LabVIEW / Chelmsford, MA.Lockheed Martin.Chelmsford, MA 01824','Test Engineer .Oasis Systems, Inc..Hanscom AFB, MA','DESIGN ENGINEER.CIRCOR.Warren, MA',
+'Mechanical Design Engineer.Staffmark.Woodstock, CT','Technology Systems Designer.Bard, Rao and Athanas Consulting Engineers.Boston, MA','Product Management Specialist.IDG.Framingham, MA 01701','Product Analyst - Entry Level Engineering.Mondo.Burlington, MA',
+'Process Engineering Padawan .Ginkgo Bioworks.Boston, MA','Optimization Engineer.Philips.Fitchburg, MA','Logic Design Engineer.Teradyne.North Reading, MA 01864','Product Designer.Panjiva.Cambridge, MA']
 scrape_data = scrape_data[~scrape_data.job_comp_loc.str.contains('|'.join(blacklist))]
 
 #removing invalid results **choose whatever column is before job_comp_loc
